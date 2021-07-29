@@ -1,6 +1,6 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
-Plug 'liuchengxu/space-vim-dark'
+Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -17,7 +17,7 @@ Plug 'nanotech/jellybeans.vim'
 call plug#end() 
 
 
-colorscheme jellybeans
+colorscheme gruvbox
 
 hi comment cterm=italic
 hi Comment guifg=#5C6370 ctermfg=59
