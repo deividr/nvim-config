@@ -1,6 +1,7 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -14,8 +15,11 @@ Plug 'morhetz/gruvbox'
 Plug 'joonty/vdebug'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nanotech/jellybeans.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'jreybert/vimagit'
+Plug 'tpope/vim-fugitive'
+Plug 'edkolev/tmuxline.vim'
 call plug#end() 
-
 
 colorscheme gruvbox
 
@@ -36,10 +40,12 @@ set number
 set relativenumber
 set mouse=a
 set inccommand=split
+set clipboard=unnamedplus
 
 nnoremap <leader>; A;<esc>
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>y "*y 
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 nnoremap <c-o> :NERDTreeToggle <cr>
