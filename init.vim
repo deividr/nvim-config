@@ -6,7 +6,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'ryanoasis/vim-devicons'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'airblade/vim-gitgutter'
@@ -19,6 +19,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'jreybert/vimagit'
 Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 call plug#end() 
 
 colorscheme gruvbox
