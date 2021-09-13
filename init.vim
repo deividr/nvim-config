@@ -1,6 +1,6 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
+Plug 'preservim/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
@@ -51,4 +51,5 @@ nnoremap <leader>y "*y
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 nnoremap <c-o> :NERDTreeToggle <cr>
+nnoremap <c-i> :NERDTreeFind <cr>
 nnoremap <c-s> :w! <cr>
